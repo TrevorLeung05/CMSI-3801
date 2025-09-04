@@ -17,8 +17,8 @@
 
 7. Control Flow is the order in which computation proceeds within each line of execution. On the other hand, Concurrency is the coordination between lines of execution, or multiple executed tasks happening at the same time.
 
-8.
+8. How do machine and assembly languages differ? Give an example that is different from the one seen in class.
 
-9.
+9. We saw, in class, a function that computed either 3n + 1 or 4n - 3 depending on whether is even or odd. Write this function in a programming language not seen in class.
 
-10.
+10. The language Verse is billed as a functional-logic programming languages. Write a short paragraph about Verse, including its creator, year of creation, why it was created, and what exactly “functional-logic” means.
