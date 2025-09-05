@@ -19,21 +19,15 @@
 
 8. Machine language is the lowest-level language, consisting of binary code (0s and 1s). Assembly language, uses human-readable mnemonics and symbols (like ADD and MOV) to represent machine code instructions They differ in their readability and how they are processed by a computer.
 
-	Function to Add Two Numbers
-	Machine Language
-	
- 	A1 XX XX XX XX     ; mov eax, [num1] - placeholder
-	
- 	03 05 YY YY YY YY  ; add eax, [num2] - placeholder
+	Function to Add Two Numbers\
+	Machine Language\
+ 	A1 XX XX XX XX     ; mov eax, [num1] - placeholder\
+ 	03 05 YY YY YY YY  ; add eax, [num2] - placeholder\
 
-	
- 	Assembly Language
-
-	mov eax, [num1]     ; Load value from memory location 'num1' into EAX
-
-	add eax, [num2]     ; Add value from memory location 'num2' to EAX
-
-	; Result is now in EAX
+  Assembly Language\
+	mov eax, [num1]     ; Load value from memory location 'num1' into EAX\
+	add eax, [num2]     ; Add value from memory location 'num2' to EAX\
+	; Result is now in EAX\
 
 10. Lua
 function conditional_calculation(n)
