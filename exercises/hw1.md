@@ -17,8 +17,25 @@
 
 7. Control Flow is the order in which computation proceeds within each line of execution. On the other hand, Concurrency is the coordination between lines of execution, or multiple executed tasks happening at the same time.
 
-8. How do machine and assembly languages differ? Give an example that is different from the one seen in class.
+8. Machine language is the lowest-level language, consisting of binary code (0s and 1s). Assembly language, uses human-readable mnemonics and symbols (like ADD and MOV) to represent machine code instructions They differ in their readability and how they are processed by a computer.
 
-9. We saw, in class, a function that computed either 3n + 1 or 4n - 3 depending on whether is even or odd. Write this function in a programming language not seen in class.
+Function to Add Two Numbers
+Machine Language
+A1 XX XX XX XX     ; mov eax, [num1] - placeholder
+03 05 YY YY YY YY  ; add eax, [num2] - placeholder
 
-10. The language Verse is billed as a functional-logic programming languages. Write a short paragraph about Verse, including its creator, year of creation, why it was created, and what exactly “functional-logic” means.
+Assembly Language
+    mov eax, [num1]     ; Load value from memory location 'num1' into EAX
+    add eax, [num2]     ; Add value from memory location 'num2' to EAX
+    ; Result is now in EAX
+
+9. Lua
+function conditional_calculation(n)
+    if (n % 2 == 0) then
+        return 3 * n + 1
+    else
+        return 4 * n - 3
+    end
+end
+
+10. Verse is a modern programming language developed by Epic Games and released in 2023, written by a team of programmers led by Simon Peyton Jones and Epic Games CEO Tim Sweeney. It was designed as the foundational language for building in the metaverse, with Fortnite Creative and Unreal Engine environments in mind. Verse combines elements of functional programming, which emphasizes clean and reusable code, with logic programming, which allows for flexible problem-solving through pattern matching and inference. 
