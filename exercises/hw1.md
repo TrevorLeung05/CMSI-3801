@@ -24,10 +24,10 @@
  	A1 XX XX XX XX     ; mov eax, [num1] - placeholder\
  	03 05 YY YY YY YY  ; add eax, [num2] - placeholder\
 
-  Assembly Language\
-	mov eax, [num1]     ; Load value from memory location 'num1' into EAX\
-	add eax, [num2]     ; Add value from memory location 'num2' to EAX\
-	; Result is now in EAX\
+   Assembly Language\
+   	mov eax, [num1]     ; Load value from memory location 'num1' into EAX\
+   	add eax, [num2]     ; Add value from memory location 'num2' to EAX\
+   	; Result is now in EAX\
 
 10. Lua
 function conditional_calculation(n)
