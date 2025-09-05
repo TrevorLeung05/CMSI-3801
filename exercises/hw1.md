@@ -31,11 +31,11 @@
 
 10. Lua\
 function conditional_calculation(n)\
-	if (n % 2 == 0) then\
-		return 3 * n + 1\
-	else\
-		return 4 * n - 3\
-	end\
+    if (n % 2 == 0) then\
+        return 3 * n + 1\
+    else\
+        return 4 * n - 3\
+    end\
 end\
 
 12. Verse is a modern programming language developed by Epic Games and released in 2023, written by a team of programmers led by Simon Peyton Jones and Epic Games CEO Tim Sweeney. It was designed as the foundational language for building in the metaverse, with Fortnite Creative and Unreal Engine environments in mind. Verse combines elements of functional programming, which emphasizes clean and reusable code, with logic programming, which allows for flexible problem-solving through pattern matching and inference. 
