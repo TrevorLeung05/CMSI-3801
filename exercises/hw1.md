@@ -20,6 +20,7 @@
 8. Machine language is the lowest-level language, consisting of binary code (0s and 1s). Assembly language, uses human-readable mnemonics and symbols (like ADD and MOV) to represent machine code instructions They differ in their readability and how they are processed by a computer.
 
 Function to Add Two Numbers
+
 Machine Language
 A1 XX XX XX XX     ; mov eax, [num1] - placeholder
 03 05 YY YY YY YY  ; add eax, [num2] - placeholder
