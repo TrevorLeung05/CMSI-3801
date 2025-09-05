@@ -29,7 +29,7 @@
    	add eax, [num2]     ; Add value from memory location 'num2' to EAX\
    	; Result is now in EAX\
 
-10. Lua\
+10. Lua
 ```
 function conditional_calculation(n)
     if (n % 2 == 0) then
