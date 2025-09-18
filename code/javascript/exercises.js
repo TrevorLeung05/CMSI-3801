@@ -91,25 +91,21 @@ export class Quaternion {
 
     toString() {
         const parts = [];
-
-        const pushTerm = (coef, sym = "") => {
-            if (Object.is(coef, 0) || coef === 0) return;
-            const ifFirst = parts.length === 0;
-            const sign = coef < 0 ? (isFirst ? "-" : "-") : (isFirst ? "" : "+");
+        const isZero = (x) => x === 0 || Object.is(x, -0);
+        const emit = (coef, unit = "") => {
+            if (isZero(coef)) return;
+            const first = parts.length === 0;
+            const neg = coef < 0;
             const abs = Math.abs(coef);
-
-            if (sym === "") {
-                parts.push(`${sign}${abs}`);
-            } else {
-                const mag = abs === 1 ? "" : `${abs}`;
-                parts.push(`${sign}${mag}${sym}`);
-            }
+            const sign = first ? (neg ? "-" : "") : (neg ? "-" : "+");
+            const mag = unit ? (abs === 1 ? "" : String(abs)) : String(abs);
+            parts.push(`${sign}${mag}${unit}`);
         };
 
-        pushTerm(this.a, "");
-        pushTerm(this.b), "i";
-        pushTerm(this.c, "j");
-        pushTerm(this.d, "k");
+        emit(this.a, "");
+        emit(this.b, "i");
+        emit(this.c, "j");
+        emit(this.d, "k");
 
         return parts.length ? parts.join("") : "0";
     }
