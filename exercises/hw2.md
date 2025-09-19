@@ -1,8 +1,8 @@
-1.
+1. NULL is a reference with no referent. It was introduced by Tony Hoare as a way to represent empty values, but it's led to runtime crashes and security vulnerabilities due to null pointer exceptions (billion dollar mistake).
 
-2.
+2. Tony Hoare created the null reference for ALGOL W to handle optional or missing values. He intended for it to be a simple pointer indicating that an object wasn't pointing to anything. However, as Edsger Dijkstra noted, a null reference doesn't represent the absence of a connection. Instead, it creates a universal, false connection. Dijkstra's analogy, "If you have a null reference, then every bachelor who you represent in your object structure will seem to be married polyamorously to the same person Null," highlights this problem.
 
-3.
+3. The correct value for 3**35 is 500,315,450,989,997,07. Python's result is correct because it uses arbitrary-precision integers, and JavaScript uses 64-bit floating-point number (IEEE 754), which has a limited number of bits for precision. The correct value, 500,315,450,989,997,07, exceeds JavaScript's precision limit, so it rounds the number to the nearest representable value resulting in an incorrect number.
 
 4. {"x": 3, y: 5, "z": z}
 
