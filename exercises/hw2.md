@@ -4,11 +4,20 @@
 
 3.
 
-4.
+4. {"x": 3, y: 5, "z": z}
 
-5.
+5. In javascript, == is called loose equality and includes type-coercion which means it may automatically convert a value's data type in order to make a comparison. This can have unwanted results. For exanmple, javscript might convert the string "5" to an integer. Instead, most people recommend referring === as "equals" as this is strict equality, meaning it will compare both value and type with no coercion.
 
 6.
+function arithmeticsequence(start, delta)
+    return coroutine.create(function()
+        local value = start
+        while true do
+            coroutine.yield(value)
+            value = value + delta
+        end
+    end)
+end
 
 7. a) Under static scoping, this script ends up being f() * h() - x = (1) * (1) - 1 = 0, as the variables resolve to x = 1, being the global default.
    b) Under dynamic scoping, the script is resolved based on their runtime execution. f() * h() - x = (1) * (3) - 1 =  2
