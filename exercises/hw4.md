@@ -12,8 +12,8 @@
 
 7. Yegor Bugayenko thought Alan Kay was wrong because Alan Kay regretted using the name "object", as that wording made people focus on objects just as data structures with methods. However, Yegor Bugayenko disagreed with Kay's regret, arguing that Kay's term of "object" was right, that the problem was the people forgot that an object should also act, not just hold.
 
-8.
+8. In class-based OOP, objects are instantiated from a class, and inheritance occurs between classes. In prototype-based OOP, objects are created by cloning an existing object, and inheritance happens through delegation, where objects forward calls to their prototype.
 
-9.
+9. A Java record automatically generates private final fields, a public "canonical" constructor, and accessor method for all its components. It also provides complete, value-based implementations of the equals(), hashCode(), and toString() methods.
 
-10.
+10. Instead of Kotlin's companion object, Java programmers use static fields and static methods directly inside the class. This allows factory methods and constants to be called on the class itself, achieving the same functionality.
