@@ -1,10 +1,10 @@
-1.
+1. a) abstract b) no keyword c) final d) no keyword
 
-2.
+2. Structures are value types but calsses are reference types. Classes have more functionality than structures. Classes can have deinitalizers, they can inherit from superclasses, and they have run-time type cehcking and casting. 
 
-3.
+3. No swift does nott have null references. Swift has a value called nil but it does not belong to type String, it belongs to type String? so if there is a chance you need nil, you must use a different type.
 
-4.
+4. No, if the list is mutable. Doing so ould breark type safety because List<Animal> wouldallow inserting any kind of Animal even if they are not dogs. If the list is read only, then it would be safe.
 
 5. Swift's Void type is weirdly named because Void is an alias for a unit type with exactly one value, (). Their excuse for using that term is just a stylistic way to show the absence of an actual return value.
 
