@@ -14,3 +14,7 @@ e) Stack overflow - stack memory exhausted by deep calls/allocations
 f) Wild pointer - uninitialized or invalid pointer with unknown target
 
 4. In C++, moving means stealing resources from an object and leaving it in a "valid but unspecified" state, often an empty state. This only makes sense on r-values and not l-values because r-values are objects we are about to throw away, while it won't make sense for named,, still in use objects like l-values
+
+5. In order to avoid expenive deep copies and significantly improve performance in modern C++
+
+6. If your class manages a source, you should define all 5 special member functions. The 5 includes destructor, copy constuctor, copy assignment operator, move constructor, and move assignment operator.
