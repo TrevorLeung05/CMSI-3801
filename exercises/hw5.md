@@ -18,3 +18,7 @@ f) Wild pointer - uninitialized or invalid pointer with unknown target
 5. In order to avoid expenive deep copies and significantly improve performance in modern C++
 
 6. If your class manages a source, you should define all 5 special member functions. The 5 includes destructor, copy constuctor, copy assignment operator, move constructor, and move assignment operator.
+
+7. Each value in Rust has an owner, there can only be one owner at a time, and when the owner goes out of scope, the value will be dropped.
+
+8. At any given time, you can have any number of immutable references, at any given time, you can have only one mutable reference, and references must always be valid
